@@ -1,0 +1,109 @@
+body{
+    padding: 0px;
+    margin: 0px;
+    background-color: rgb(218, 238, 218);
+}
+
+.main-game {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.painel {
+    margin-right: 100px;
+}
+
+.painel ul {
+    list-style-type: none;
+}
+
+.painel ul li{
+    display: flex;
+    justify-content: center;
+    align-items: ce;
+    margin: 1px;
+    padding: 5px;
+    font-size: 36px;
+    font-family: 'Acme', sans-serif;
+    color: black;
+    text-align: center;
+}
+
+.painel ul .Start {
+    margin-bottom: 70px;
+    cursor: pointer;
+    background-color: gray;
+    color: white;
+    border-radius: 10px;
+    transition: .2s;
+    opacity: .3;
+}
+
+.painel ul .Start:hover {
+    background-color: green;
+    opacity: 1;
+    transform: translateY(-5px);
+    box-shadow: 0 3px 5px black;
+
+}
+
+.painel ul .Start:active {
+    scale: .9;
+    opacity: .3;
+    transform: translateY(5px);
+    box-shadow: 0 0px 0px black;
+}
+
+.genius {
+    display: grid;
+    grid-template-areas:
+    'green red'
+    'yellow blue';
+    grid-gap: 10px;
+    border: 1px solid #ffffff;
+    background-color: #ffffff;
+    border-radius: 100%;
+    width: 700px;
+    height: 700px;
+}
+
+.blue {
+    grid-area: blue;
+    background-color: blue;
+    border-bottom-right-radius: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.green {
+    grid-area: green;
+    background-color: green;
+    border-top-left-radius: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.red {
+    grid-area: red;
+    background-color: red;
+    border-top-right-radius: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.yellow {
+    grid-area: yellow;
+    background-color: rgb(221, 224, 32);
+    border-bottom-left-radius: 100%;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.selected {
+    opacity: .4;
+    scale: .8;
+    transition: .2s;
+}
